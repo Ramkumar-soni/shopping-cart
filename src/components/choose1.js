@@ -60,11 +60,6 @@ class Choose1 extends Component {
     //                 id: 6,
     //                 name: "Zebra",
     //                 price: 25000
-    //             },
-    //             {
-    //                 id: 7,
-    //                 name: "RamSoni",
-    //                 price: 1000
     //             }
     //         ],
     //         sortingVal: 1
