@@ -18,8 +18,8 @@ class Choose1 extends Component {
         super(props);
         this.state = {
             user: '',
-            text: 'Add To Box',
-            price: 350,
+           // text: 'Add To Box',
+           // price: 350,
             message: '',
             items: '',
             size: '',
