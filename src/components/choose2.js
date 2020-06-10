@@ -8,20 +8,6 @@ import { connect } from 'react-redux'
 // import selectUser from './select_user'
 import UserDetail from './user-detail'
 import Choose3 from './choose3';
-// import MContext from ''
-// import updatedComponents from './withCounter'
-
-//  class ComponentA extends Component {
-//     render() {
-//        return (
-//            <div>
-//             <Choose2  />
-//             <Choose3 />
-//             </div>
-//             ) // Use ComponentB here
-//     }
-//  }
-
 class Choose2 extends Component {
     constructor(props) {
         super(props)
@@ -38,10 +24,6 @@ class Choose2 extends Component {
         browserHistory.push("/");
 
     }
-    // handleChange2 = () => {
-    //     this.props.history.goBack()
-
-    // }
     handleChange3 = () => {
         this.setState({
             message: 'FREE'

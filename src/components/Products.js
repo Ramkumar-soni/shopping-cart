@@ -4,7 +4,6 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux'
 import selectUser from './select_user'
 import UserDetail from './user-detail'
-// import util from './util'
 // import Choose3 from './choose3';
 import MyProvider from './provider';
 
@@ -25,7 +24,6 @@ class Products extends Component {
                                 <Card.Header>MRP Rs. {product.price}</Card.Header>
                                 <Card.Description>
                                     <Button key={product.id} onClick={() => this.props.selectUser(product, this.props.hideComponent(), this.props.handleChange())} color='red'>Add To Box</Button>
-                                    {/* <Button key={product.id} onClick={() => this.props.selectUser(product , this.props.handleAddToCart())}  color='red'>Add To Box1</Button>                     */}
                                 </Card.Description>
                             </Card.Content>
                             <Card.Content extra>

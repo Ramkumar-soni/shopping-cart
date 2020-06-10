@@ -1,42 +1,9 @@
-// import React, {Component} from 'react';
-// import {connect} from 'react-redux';
-// import util from './util'
-// /*
-//  * We need "if(!this.props.user)" because we set state to null by default
-//  * */
-
-// class UserDetail extends Component {
-//     render() {
-//         console.log('value',this.props.user)                                                                                                                                                    ;
-//         if (!this.props.user) {
-//             return (<div><h1>Select a user...</h1></div>);
-//         }
-//         return (
-//             <div>
-//                 <img src={this.props.user.image} style={{ width: '175px', height: '200px', border: '1px solid black' }} />
-//                 <h2>{this.props.user.first} {this.props.user.price}</h2>
-//                 <h3>Age: {this.props.user.age}</h3>
-//                 <h3>Description: {this.props.user.description}</h3>
-//             </div>
-//         );
-//     }
-// }
-
-// // "state.activeUser" is set in reducers/index.js
-// function mapStateToProps(state) {
-//     return {
-//         user: state.activeUser
-//     };
-// }
-
-// export default connect(mapStateToProps)(UserDetail);import React, { Component } from 'react';
 import React, { Component } from 'react';
 import { Button } from 'semantic-ui-react'
 import { connect } from 'react-redux'
-import { createHashHistory } from 'history'
 import Choose2 from './choose2';
 import Basket from './basket'
-import { BrowserRouter, withRouter } from 'react-router'
+import { BrowserRouter } from 'react-router'
 import { browserHistory } from 'react-router';
 import selectUser from './select_user'
 

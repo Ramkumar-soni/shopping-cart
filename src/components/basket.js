@@ -8,29 +8,7 @@ class Basket extends Component {
     const { cartItems } = this.props;
     console.log("Caritems", cartItems);
     console.log("item", this.props.image);
-    // const productItems = cartItems.map((product) => (
-    //     <div key={product.id}>
-    //         <div>
-    //             <Card.Group>
-    //                 <Card style={{ boxShadow: 'none' }}>
-    //                     <b>{product.first}</b>
-    //                     {/* <a href={product.id} onClick={(e) => this.props.handleAddToCart(e , product)}> */}
-    //                     <Image src={product.image} alt={product.title}  />
-    //                     {/* </a> */}
-    //                     <Card.Content>
-    //                         <Card.Header>MRP Rs. {product.price}</Card.Header>
-    //                         <Card.Description>
-    //                             <Button onClick={() => this.props.selectUser( product , this.props.hideComponent())}  color='red'>Add To Box</Button>
-    //                             <Button key={product.id} onClick={this.props.handleAddToCart(product)}  color='red'>Add To Box1</Button>                    
-    //                         </Card.Description>
-    //                     </Card.Content>
-    //                     <Card.Content extra>
-    //                     </Card.Content>
-    //                 </Card>
-    //                 </Card.Group>
-    //     </div>
-    //         </div>
-    // ));
+
     return (
       <div class='container'>
         <div style={{ textAlign: 'center', color: 'black', fontSize: "20px" }}>{cartItems.length === 0 ? "Basket is empty" : <div> You have {cartItems.length} Products in the basket</div>}</div><br />
@@ -55,7 +33,7 @@ class Basket extends Component {
                     </td>
                   </tr>
                 </table>
-               
+
               </div>
             ))}
           </div>
