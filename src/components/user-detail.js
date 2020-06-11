@@ -11,6 +11,7 @@ class Choose4 extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            isButtonDisabled: false,
             cartItems: [],
             text: this.props.message,
             text1: this.props.message1,
@@ -23,7 +24,13 @@ class Choose4 extends Component {
     handleChange1 = () => {
         browserHistory.push("/");
     }
-
+    uploadFile = () => {
+        // first set the isButtonDisabled to true
+        this.setState({
+          isButtonDisabled: true
+        });
+        // then do your thing
+      }
     handleAddToCart = () => {
         console.log('count', this.props.users.length);
         this.setState(state => {
@@ -70,14 +77,14 @@ class Choose4 extends Component {
                     <div style={{ display: 'inline-block' }}>
                         <table>
                             <tr><td>
-                                <img src="/images/img15.jpg" alt="Avatar" class="avatar" style={{
+                                <img type="button" src="/images/img15.jpg" alt="Avatar" class="avatar" style={{
                                     verticalAlign: 'middle',
                                     width: '60px',
                                     height: '60px',
                                     borderRadius: '50%', border: '2px solid white',
                                     boxShadow: '2px 2px 8px 0px rgba(0, 0, 0, 1)'
                                 }} />
-                                <p><b>Step 1:</b><br /> Choose your products</p></td>
+                                <p style={{color:'black'}}><b>Step 1:</b><br /> Choose your products</p></td>
                                 <td style={{ paddingLeft: '20px' }}>
                                     <img src="/images/img22.webp" alt="Avatar" class="avatar" style={{
                                         verticalAlign: 'middle',
@@ -86,7 +93,7 @@ class Choose4 extends Component {
                                         borderRadius: '50%', border: '2px solid white',
                                         boxShadow: '2px 2px 8px 0px rgba(0, 0, 0, 1)'
                                     }} />
-                                    <p><b>Step 2:</b><br /> Wrap Your gift</p></td>
+                                    <p style={{color:'black'}}><b>Step 2:</b><br /> Wrap Your gift</p></td>
                                 <td style={{ paddingLeft: '20px' }}>
                                     <img src="/images/img19.jpg" alt="Avatar" class="avatar" style={{
                                         verticalAlign: 'middle',
@@ -95,7 +102,7 @@ class Choose4 extends Component {
                                         borderRadius: '50%', border: '2px solid white',
                                         boxShadow: '2px 2px 8px 0px rgba(0, 0, 0, 1)'
                                     }} />
-                                    <p><b>Step 3:</b><br /> Add a message</p></td>
+                                    <p style={{color:'black'}}><b>Step 3:</b><br /> Add a message</p></td>
                                 <td style={{ paddingLeft: '20px' }}>
                                     <img src="/images/img13.jpg" alt="Avatar" class="avatar" style={{
                                         verticalAlign: 'middle',
@@ -104,7 +111,7 @@ class Choose4 extends Component {
                                         borderRadius: '50%', border: '2px solid white',
                                         boxShadow: '2px 2px 8px 0px rgba(0, 0, 0, 1)'
                                     }} />
-                                    <p><b>Step 4:</b><br /> Review your gift box</p></td>
+                                    <p style={{color:'black'}}><b>Step 4:</b><br /> Review your gift box</p></td>
                             </tr>
                         </table>
                     </div>
@@ -121,18 +128,18 @@ class Choose4 extends Component {
                                     <td style={{ textAlign: 'left' }}>
                                         <p><b>Your Gift Box Contains:</b></p>
                                         <ul>
-                                            <td><li>{this.state.text2}</li></td><td style={{ paddingLeft: '32px' }}><b>{this.state.text3}</b></td><br />
+                                            <td><li>{this.state.text2}</li></td><td style={{ paddingLeft: '32px' }}><b>&#8377;{this.state.text3}</b></td><br />
                                             <td><li>Gift Wrapping</li></td><td style={{ paddingLeft: '86px' }}>{this.state.text}</td><br />
                                             <td><li>Personalised card</li></td><td style={{ paddingLeft: '64px' }}>{this.state.text1}</td>
                                         </ul><br />
-                                        <td>Total:</td><td style={{ paddingLeft: '35px' }}><b>{this.state.text3}</b></td>
+                                        <td>Total:</td><td style={{ paddingLeft: '35px' }}><b>&#8377;{this.state.text3}</b></td>
                                     </td>
                                 </tr>
                                 {/* <td><b>{this.props.name}</b></td> */}
                                 <br /><br />
                                 <div>
-                                    <Button onClick={() => this.props.selectUser(this.props.users, this.handleAddToCart(), this.handleChange())} style={{ backgroundColor: 'red', color: 'white' }} >ADD TO CARD</Button>
-                                    <Button onClick={this.handleChange1}>Back To Page:1</Button>
+                                    <Button onClick={() => this.props.selectUser(this.props.users, this.handleAddToCart(), this.handleChange() , this.uploadFile())}  disabled={this.state.isButtonDisabled} style={{ backgroundColor: 'red', color: 'white' }} >ADD TO CARD</Button>
+                                    <button type="button" class="btn btn-info" onClick={this.handleChange1}>Back To Page:1</button>
                                 </div>
                             </td>
                         </tr>

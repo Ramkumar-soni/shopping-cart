@@ -21,7 +21,7 @@ class Products extends Component {
                             <b>{product.first}</b>
                             <Image src={product.image} alt={product.title} />
                             <Card.Content>
-                                <Card.Header>MRP Rs. {product.price}</Card.Header>
+                                <Card.Header>MRP Rs. &#8377;{product.price}</Card.Header>
                                 <Card.Description>
                                     <Button key={product.id} onClick={() => this.props.selectUser(product, this.props.hideComponent(), this.props.handleChange())} color='red'>Add To Box</Button>
                                 </Card.Description>

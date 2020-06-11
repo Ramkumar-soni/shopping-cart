@@ -78,6 +78,14 @@ class Evaii extends Component {
               <Copyright />
               choose2:-"/images/img22.webp"
               choose3:-"/images/img23.webp"
+               <input type="radio" name="radiobutton" id="radio1" onClick={this.handleChange3 ? this.handleChange3 : !this.handleChange3 } value="optionr1" onChange={this.handleChange1} />
+                                    <label for="radio1">Yes, i'd like that!</label>
+                                 </div>
+                                <br />
+                                <div>
+                                    <input type="radio" name="radiobutton" id="radio2" onClick={this.handleChange4  ? this.handleChange4 : !this.handleChange4} value="optionr2" onChange={this.handleChange1 } />
+                                    <label for="radio2">No, I'd prefer not to.</label>
+                              </div><br /><br /><br />
             </div> */}
           </div>
         </div>

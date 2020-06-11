@@ -100,7 +100,7 @@ class Choose1 extends Component {
                                         height: '60px',
                                         borderRadius: '50%', border: '2px solid white',
                                         boxShadow: '2px 2px 8px 0px rgba(0, 0, 0, 1)'
-                                    }} /><p><b>Step 1:</b><br /> Choose your products</p></td>
+                                    }} /><p style={{color:'black'}}><b>Step 1:</b><br /> Choose your products</p></td>
                                     <td style={{ paddingLeft: '20px' }}>
                                         <img src="/images/img22.webp" alt="Avatar" style={{
                                             verticalAlign: 'middle',
@@ -109,7 +109,7 @@ class Choose1 extends Component {
                                             borderRadius: '50%', border: '2px solid white',
                                             boxShadow: '2px 2px 8px 0px rgba(0, 0, 0, 1)'
                                         }} />
-                                        <p><b>Step 2:</b><br /> Wrap Your gift</p></td>
+                                        <p style={{color:'black'}}><b>Step 2:</b><br /> Wrap Your gift</p></td>
                                     <td style={{ paddingLeft: '20px' }}>
                                         <img src="/images/img19.jpg" alt="Avatar" style={{
                                             verticalAlign: 'middle',
@@ -118,7 +118,7 @@ class Choose1 extends Component {
                                             borderRadius: '50%', border: '2px solid white',
                                             boxShadow: '2px 2px 8px 0px rgba(0, 0, 0, 1)'
                                         }} />
-                                        <p><b>Step 3:</b><br /> Add a message</p></td>
+                                        <p style={{color:'black'}}><b>Step 3:</b><br /> Add a message</p></td>
                                     <td style={{ paddingLeft: '20px' }}>
                                         <img src="/images/img13.jpg" alt="Avatar" style={{
                                             verticalAlign: 'middle',
@@ -127,7 +127,7 @@ class Choose1 extends Component {
                                             borderRadius: '50%', border: '2px solid white',
                                             boxShadow: '2px 2px 8px 0px rgba(0, 0, 0, 1)'
                                         }} />
-                                        <p><b>Step 4:</b><br /> Review your gift box</p>
+                                        <p style={{color:'black'}}><b>Step 4:</b><br /> Review your gift box</p>
                                     </td>
                                 </tr>
                             </table>

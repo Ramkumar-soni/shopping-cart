@@ -26,7 +26,7 @@ class Basket extends Component {
                         {item.first}
                       </div>
                       <div>
-                        {item.price}<br />
+                      &#8377;{item.price}<br />
                         <b style={{ color: 'red' }}>Added</b>
 
                       </div>

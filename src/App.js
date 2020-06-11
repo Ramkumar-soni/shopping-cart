@@ -20,19 +20,22 @@ import App1 from './components/main'
 import { Provider } from 'react-redux'
 import {createStore } from 'redux'
 import Reducer from './components/reducer'
+import CheckAndUncheck from  './components/withCounter'
 import Redux from './components/redux'
+import { Message } from 'semantic-ui-react';
 
  function App() {
   const store = createStore(Reducer);
   return ( 
     <div className="App">    
         <Provider store={store}>
+          {/* <CheckAndUncheck /> */}
       {/* <Choose1 /> */}
          <Router history={browserHistory}>  
         <div> 
        <Route exact path="/" component={Choose1} />
        <Route path="/contact" component={Choose2} />
-       <Route path="/contact2" component={Choose4} />
+       <Route path="/contact2" component={Choose3} />
        <Redirect to="/"/>
        </div>
        </Router>
